@@ -1,0 +1,30 @@
+{
+    "compilerOptions": {
+        "target": "ESNext", // Define a versão dpo ECMAScript para qual o TypeScript irá compilar o código
+        "lib": [
+            "DOM",
+            "DOM.Iterable",
+            "ESNext"
+        ], // Especifica as bibliotecas que deverão ser incluídas durante a compilação
+        "allowJs": false, // Desabilita a compilação de arquivos JavaScript junto com os arquivos TypeScript
+        "skipLibCheck": true,  // Ignora a verificação de bibliotecas de definição de tipo durante a compilação
+        "esModuleInterop": false, // O código não irá usar a forma de importação/exportação de módulos ES padrão
+        "allowSyntheticDefaultImports": true, // Permite o uso de importações sintéticas de valores padrão em módulos TypeScript 
+        "strict": true, // Ativa o modo estrito do TypeScript, que aplica um conjunto mais rigoroso de rregras de verificação de tipagem
+        "forceConsistentCasingInFileNames": true,   // Garante que os nomes dos arquivos sejam tratados de forma consistente 
+        "module": "ESNext", // Define o formato de módulo que será usado ao gerar o código JavaScript 
+        "moduleResolution": "Node", // Especifica como o TypeScript resolve as importações de módulos
+        "resolveJsonModule": true, // Habilita a importação direta de arquivos JSON como módulos
+        "isolatedModules": true, // Habilita a compilação de módulos independentes 
+        "noEmit": true, // Impede a geração de arquivos de saída JavaScript durante a compilação
+        "jsx": "react-jsx" // Especifica qual tipo de sintaxe JSX deve ser usado durante a compilação do TypeScript
+    },
+    "include": [
+        "src" // Apenas a pasta src e seus subdiretórios serão incluídos na compilação
+    ],
+    "references": [
+        {
+            "path": "./tsconfig.node.json" // Referências entre projetos TypeScript
+        }
+    ]
+}

@@ -1,2 +1,1 @@
-# typescript
-Curso Typescript | Rocketseat
+⛅ Projeto do módulo bônus de Typescript para o Explorer.
